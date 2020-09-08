@@ -1,0 +1,50 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24/08/2020, 19:52:26
+    Author     : xande
+*/
+
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    
+    transition: all 0.3s;
+    transform: translateX(-100%);
+
+    overflow-y: scroll;
+}
+
+.menu a{
+        display: block;
+        text-decoration: none;
+        height: 40px;
+        padding: 10px;
+}
+.menu p{
+    display: block;
+    text-decoration: none;
+    height: 10px;
+    padding: 10px;
+}
+#chek-menu{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+    height: 25px;
+    width: 25px;
+    margin: 10px;
+}
+
+#chek-menu:checked ~ .menu {
+        transform: translateX(0%);
+}
+

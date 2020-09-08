@@ -1,0 +1,1 @@
+<h1>AGECIT-<?php echo $_SESSION['nombreu'];require_once $_SESSION['url'].'validacion.php';?></h1>
